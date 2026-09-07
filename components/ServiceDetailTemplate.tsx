@@ -231,18 +231,6 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
                   WhatsApp: {CONTACT_INFO.whatsapp1}
                 </a>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a
-                  href={formatWhatsAppLink(
-                    CONTACT_INFO.whatsapp2Clean,
-                    `Hola, quiero agendar ${service.title}`
-                  )}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WhatsApp: {CONTACT_INFO.whatsapp2}
-                </a>
-              </Button>
             </div>
           </div>
         </div>

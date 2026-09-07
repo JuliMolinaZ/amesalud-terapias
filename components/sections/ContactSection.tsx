@@ -96,8 +96,8 @@ export function ContactSection() {
     {
       icon: Phone,
       title: 'Teléfono',
-      description: CONTACT_INFO.whatsapp2,
-      href: `tel:${CONTACT_INFO.whatsapp2}`,
+      description: CONTACT_INFO.whatsapp1,
+      href: `tel:${CONTACT_INFO.whatsapp1}`,
       color: 'from-blue-500 to-blue-600',
     },
     {

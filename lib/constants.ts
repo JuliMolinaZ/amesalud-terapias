@@ -2,10 +2,8 @@
  * Contact information for amesalud
  */
 export const CONTACT_INFO = {
-  whatsapp1: '+57 321 948 5783',
-  whatsapp1Clean: '573219485783',
-  whatsapp2: '+57 314 287 0120',
-  whatsapp2Clean: '573142870120',
+  whatsapp1: '+57 310 337 3913',
+  whatsapp1Clean: '573103373913',
   email: 'amesaludterapias@gmail.com',
   address: 'Bogotá, Colombia',
   schedule: 'Lunes a Viernes: 8:00 AM - 6:00 PM\nSábados: 9:00 AM - 2:00 PM',
@@ -351,7 +349,7 @@ export const CHATBOT_FAQ = [
     id: 'agendar',
     question: '¿Cómo agendar una cita?',
     answer:
-      '📅 **Cómo Agendar una Cita**\n\nPuedes agendar de las siguientes formas:\n\n**📱 WhatsApp:**\n• +57 321 948 5783\n• +57 314 287 0120\n\n**📧 Email:**\n• amesaludterapias@gmail.com\n\n**Al agendar, por favor indica:**\n✅ El servicio que necesitas\n✅ Si prefieres atención a domicilio o en consultorio\n✅ Tu disponibilidad de horarios\n✅ Cualquier información relevante sobre tu caso\n\nNuestro equipo te responderá lo antes posible para coordinar tu cita. ¿Qué servicio te interesa?',
+      '📅 **Cómo Agendar una Cita**\n\nPuedes agendar de las siguientes formas:\n\n**📱 WhatsApp:**\n• +57 310 337 3913\n\n**📧 Email:**\n• amesaludterapias@gmail.com\n\n**Al agendar, por favor indica:**\n✅ El servicio que necesitas\n✅ Si prefieres atención a domicilio o en consultorio\n✅ Tu disponibilidad de horarios\n✅ Cualquier información relevante sobre tu caso\n\nNuestro equipo te responderá lo antes posible para coordinar tu cita. ¿Qué servicio te interesa?',
     keywords: [
       'agendar',
       'cita',
@@ -428,7 +426,7 @@ export const CHATBOT_FAQ = [
     id: 'precios',
     question: '¿Cuáles son los precios?',
     answer:
-      '💰 **Información de Precios**\n\nLos precios varían según el servicio y si es a domicilio o en consultorio. Para obtener información detallada sobre tarifas:\n\n📱 **Contacta por WhatsApp:**\n• +57 321 948 5783\n• +57 314 287 0120\n\n📧 **O por Email:**\n• amesaludterapias@gmail.com\n\nNuestro equipo te proporcionará un presupuesto personalizado según tus necesidades específicas. También podemos ofrecerte paquetes o planes según la frecuencia de tus sesiones.\n\n¿Qué servicio te interesa?',
+      '💰 **Información de Precios**\n\nLos precios varían según el servicio y si es a domicilio o en consultorio. Para obtener información detallada sobre tarifas:\n\n📱 **Contacta por WhatsApp:**\n• +57 310 337 3913\n\n📧 **O por Email:**\n• amesaludterapias@gmail.com\n\nNuestro equipo te proporcionará un presupuesto personalizado según tus necesidades específicas. También podemos ofrecerte paquetes o planes según la frecuencia de tus sesiones.\n\n¿Qué servicio te interesa?',
     keywords: [
       'precio',
       'costo',
@@ -468,7 +466,7 @@ export const CHATBOT_FAQ = [
     id: 'ubicacion',
     question: '¿Dónde están ubicados?',
     answer:
-      '📍 **Ubicación**\n\nEstamos ubicados en **Bogotá, Colombia**.\n\n**Servicios disponibles:**\n✅ A domicilio en Bogotá y alrededores\n✅ Consultorio (consulta disponibilidad)\n\nPara conocer la ubicación exacta de nuestro consultorio o verificar si atendemos en tu zona, contáctanos por:\n\n📱 WhatsApp: +57 321 948 5783\n📧 Email: amesaludterapias@gmail.com\n\n¿En qué zona de Bogotá te encuentras?',
+      '📍 **Ubicación**\n\nEstamos ubicados en **Bogotá, Colombia**.\n\n**Servicios disponibles:**\n✅ A domicilio en Bogotá y alrededores\n✅ Consultorio (consulta disponibilidad)\n\nPara conocer la ubicación exacta de nuestro consultorio o verificar si atendemos en tu zona, contáctanos por:\n\n📱 WhatsApp: +57 310 337 3913\n📧 Email: amesaludterapias@gmail.com\n\n¿En qué zona de Bogotá te encuentras?',
     keywords: [
       'ubicacion',
       'ubicación',
@@ -488,7 +486,7 @@ export const CHATBOT_FAQ = [
     id: 'urgencias',
     question: '¿Atienden urgencias?',
     answer:
-      '🚨 **Atención de Urgencias**\n\nPara casos urgentes, contáctanos inmediatamente por WhatsApp:\n\n📱 +57 321 948 5783\n📱 +57 314 287 0120\n\nHaremos nuestro mejor esfuerzo para atenderte lo antes posible, incluso fuera de horarios regulares.\n\n**Importante:** Para emergencias médicas críticas, te recomendamos contactar primero a los servicios de emergencia (123) o acudir a un centro de urgencias.\n\n¿Es una urgencia? Contáctanos ahora.',
+      '🚨 **Atención de Urgencias**\n\nPara casos urgentes, contáctanos inmediatamente por WhatsApp:\n\n📱 +57 310 337 3913\n\nHaremos nuestro mejor esfuerzo para atenderte lo antes posible, incluso fuera de horarios regulares.\n\n**Importante:** Para emergencias médicas críticas, te recomendamos contactar primero a los servicios de emergencia (123) o acudir a un centro de urgencias.\n\n¿Es una urgencia? Contáctanos ahora.',
     keywords: [
       'urgencia',
       'urgente',
@@ -506,7 +504,7 @@ export const CHATBOT_FAQ = [
     id: 'seguro',
     question: '¿Aceptan seguros médicos?',
     answer:
-      '🏥 **Seguros Médicos**\n\nPara información sobre cobertura de seguros médicos o convenios, contáctanos directamente:\n\n📱 WhatsApp: +57 321 948 5783\n📧 Email: amesaludterapias@gmail.com\n\nNuestro equipo te informará sobre las opciones de pago disponibles y si trabajamos con algún convenio específico.\n\nTambién aceptamos pagos en efectivo y transferencias bancarias.\n\n¿Tienes algún seguro específico?',
+      '🏥 **Seguros Médicos**\n\nPara información sobre cobertura de seguros médicos o convenios, contáctanos directamente:\n\n📱 WhatsApp: +57 310 337 3913\n📧 Email: amesaludterapias@gmail.com\n\nNuestro equipo te informará sobre las opciones de pago disponibles y si trabajamos con algún convenio específico.\n\nTambién aceptamos pagos en efectivo y transferencias bancarias.\n\n¿Tienes algún seguro específico?',
     keywords: [
       'seguro',
       'seguros',

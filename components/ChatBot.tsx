@@ -123,7 +123,7 @@ export function ChatBot() {
 
     // Thanks and gratitude
     if (/gracias|thanks|thank|agradecido|agradecida/i.test(normalizedInput)) {
-      return '¡De nada! 😊 Estoy aquí para ayudarte. ¿Hay algo más que quieras saber sobre nuestros servicios? Si necesitas agendar una cita, puedes contactarnos por WhatsApp al +57 321 948 5783.';
+      return '¡De nada! 😊 Estoy aquí para ayudarte. ¿Hay algo más que quieras saber sobre nuestros servicios? Si necesitas agendar una cita, puedes contactarnos por WhatsApp al +57 310 337 3913.';
     }
 
     // Goodbyes and farewells
@@ -132,7 +132,7 @@ export function ChatBot() {
         normalizedInput
       )
     ) {
-      return '¡Hasta luego! 👋 Fue un placer ayudarte. Si tienes más preguntas, no dudes en escribirme. Para agendar una cita, contáctanos por WhatsApp al +57 321 948 5783. ¡Que tengas un excelente día!';
+      return '¡Hasta luego! 👋 Fue un placer ayudarte. Si tienes más preguntas, no dudes en escribirme. Para agendar una cita, contáctanos por WhatsApp al +57 310 337 3913. ¡Que tengas un excelente día!';
     }
 
     // Questions about what services are offered
@@ -165,7 +165,7 @@ export function ChatBot() {
 
     // Questions about payment methods
     if (/(pago|pagos|efectivo|tarjeta|transferencia|como pagar|cómo pagar|metodo de pago|método de pago)/i.test(normalizedInput)) {
-      return '💳 **Métodos de Pago:**\n\nAceptamos:\n✅ Efectivo\n✅ Transferencias bancarias\n\nPara información sobre seguros médicos o convenios, contáctanos directamente.\n\n📱 WhatsApp: +57 321 948 5783\n📧 Email: amesaludterapias@gmail.com\n\n¿Necesitas información sobre precios de algún servicio específico?';
+      return '💳 **Métodos de Pago:**\n\nAceptamos:\n✅ Efectivo\n✅ Transferencias bancarias\n\nPara información sobre seguros médicos o convenios, contáctanos directamente.\n\n📱 WhatsApp: +57 310 337 3913\n📧 Email: amesaludterapias@gmail.com\n\n¿Necesitas información sobre precios de algún servicio específico?';
     }
 
     // Questions that seem to be asking for help but don't match specific keywords
@@ -178,7 +178,7 @@ export function ChatBot() {
     }
 
     // Default response - friendly and helpful
-    return `Gracias por tu mensaje. 😊\n\nPara darte la mejor atención y responder todas tus preguntas, te recomiendo contactarnos directamente:\n\n📱 **WhatsApp:**\n• ${CONTACT_INFO.whatsapp1}\n• ${CONTACT_INFO.whatsapp2}\n\n📧 **Email:**\n${CONTACT_INFO.email}\n\nNuestro equipo estará encantado de ayudarte con información detallada sobre nuestros servicios, precios, disponibilidad y cualquier otra consulta.\n\nTambién puedes preguntarme sobre nuestros servicios usando los botones de arriba o escribiendo palabras clave como "suero terapia", "inyectología", "masajes", etc.`;
+    return `Gracias por tu mensaje. 😊\n\nPara darte la mejor atención y responder todas tus preguntas, te recomiendo contactarnos directamente:\n\n📱 **WhatsApp:**\n• ${CONTACT_INFO.whatsapp1}\n\n📧 **Email:**\n${CONTACT_INFO.email}\n\nNuestro equipo estará encantado de ayudarte con información detallada sobre nuestros servicios, precios, disponibilidad y cualquier otra consulta.\n\nTambién puedes preguntarme sobre nuestros servicios usando los botones de arriba o escribiendo palabras clave como "suero terapia", "inyectología", "masajes", etc.`;
   };
 
   const handleQuickAction = async (faqId: string) => {

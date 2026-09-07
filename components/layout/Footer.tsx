@@ -86,17 +86,6 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={formatWhatsAppLink(CONTACT_INFO.whatsapp2)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
-                >
-                  <Phone className="h-4 w-4 flex-shrink-0" />
-                  {CONTACT_INFO.whatsapp2}
-                </a>
-              </li>
-              <li>
-                <a
                   href={formatEmailLink(CONTACT_INFO.email)}
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
