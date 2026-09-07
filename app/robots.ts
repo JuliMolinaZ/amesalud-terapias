@@ -1,11 +1,13 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://amesalud.com/sitemap.xml',
+    sitemap: 'https://amesaludplus.com/sitemap.xml',
   };
 }

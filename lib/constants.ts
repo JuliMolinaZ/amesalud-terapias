@@ -567,6 +567,6 @@ export const SEO = {
     'Suero terapia, inyectología, terapia respiratoria y masajes terapéuticos a domicilio en Bogotá. Personal capacitado y protocolos de bioseguridad certificados.',
   keywords:
     'suero terapia, inyectología, terapia respiratoria, masajes terapéuticos, servicios médicos a domicilio, Bogotá, Colombia, hidratación intravenosa, atención domiciliaria',
-  ogImage: '/og-image.jpg',
-  url: 'https://amesalud.com',
+  ogImage: '/logo.png',
+  url: 'https://amesaludplus.com',
 } as const;

@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: SEO.ogImage,
-        width: 1200,
-        height: 630,
+        width: 800,
+        height: 800,
         alt: 'amesalud - Servicios Médicos a Domicilio',
       },
     ],

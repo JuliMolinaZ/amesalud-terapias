@@ -39,7 +39,6 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
  */
 export function ContactSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
     register,
@@ -54,25 +53,33 @@ export function ContactSection() {
     },
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true);
+  const onSubmit = (data: ContactFormData) => {
+    const service =
+      SERVICES.find((item) => item.id === data.service)?.title ?? data.service;
+    const message = [
+      'Hola, quiero solicitar información desde amesaludplus.com.',
+      '',
+      `Nombre: ${data.name}`,
+      `Correo: ${data.email}`,
+      data.phone ? `Teléfono: ${data.phone}` : null,
+      `Servicio: ${service}`,
+      `Mensaje: ${data.message}`,
+    ]
+      .filter(Boolean)
+      .join('\n');
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    window.open(
+      formatWhatsAppLink(CONTACT_INFO.whatsapp1Clean, message),
+      '_blank',
+      'noopener,noreferrer'
+    );
 
-    console.log('Form data:', data);
-
-    // In production, you would send this to an API endpoint
-    // For now, we'll show a success message
     setIsSubmitted(true);
     reset();
 
-    // Reset success message after 5 seconds
     setTimeout(() => {
       setIsSubmitted(false);
     }, 5000);
-
-    setIsSubmitting(false);
   };
 
   const contactMethods = [
@@ -212,10 +219,10 @@ export function ContactSection() {
                       <CheckCircle2 className="h-8 w-8 text-green-500" />
                     </div>
                     <h3 className="text-xl font-semibold text-center">
-                      ¡Mensaje enviado!
+                      WhatsApp abierto
                     </h3>
                     <p className="text-sm text-muted-foreground text-center">
-                      Gracias por contactarnos. Te responderemos pronto.
+                      Revisa el mensaje y presiona enviar para contactarnos.
                     </p>
                   </motion.div>
                 ) : (
@@ -319,16 +326,9 @@ export function ContactSection() {
                       type="submit"
                       variant="default"
                       className="w-full gap-2"
-                      disabled={isSubmitting}
                     >
-                      {isSubmitting ? (
-                        <>Enviando...</>
-                      ) : (
-                        <>
-                          <Send className="h-4 w-4" />
-                          Enviar mensaje
-                        </>
-                      )}
+                      <Send className="h-4 w-4" />
+                      Continuar en WhatsApp
                     </Button>
                   </form>
                 )}
